@@ -112,6 +112,72 @@ export async function buildUserMessage(
   return lines.join("\n");
 }
 
+const ANSWERS_HEADING: Record<string, string> = {
+  en: "Your submitted answers",
+  ru: "Ваши ответы",
+  de: "Ihre eingereichten Antworten",
+  fr: "Vos réponses",
+  es: "Tus respuestas",
+  it: "Le tue risposte",
+  pt: "Suas respostas",
+  pl: "Twoje odpowiedzi",
+  uk: "Ваші відповіді",
+  zh: "您提交的答案",
+  ja: "ご提出された回答",
+};
+
+const NO_ANSWER_LABEL: Record<string, string> = {
+  en: "(no answer)",
+  ru: "(нет ответа)",
+  de: "(keine Antwort)",
+  fr: "(pas de réponse)",
+  es: "(sin respuesta)",
+  it: "(nessuna risposta)",
+  pt: "(sem resposta)",
+  pl: "(brak odpowiedzi)",
+  uk: "(немає відповіді)",
+  zh: "(未作答)",
+  ja: "(回答なし)",
+};
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/** Renders the user's submitted answers as an HTML block appended to the email. */
+export async function renderAnswersHtml(
+  localeCode: string,
+  answers: Record<string, unknown>
+): Promise<string> {
+  const locale = await loadLocale(localeCode);
+  const heading = ANSWERS_HEADING[localeCode] ?? ANSWERS_HEADING.en;
+  const noAns = NO_ANSWER_LABEL[localeCode] ?? NO_ANSWER_LABEL.en;
+
+  const rows: string[] = [];
+  for (const q of questions) {
+    const prompt = get(locale, q.promptKey) ?? q.promptKey;
+    const raw = answers[q.id];
+    const rendered =
+      raw === undefined || raw === null || raw === ""
+        ? noAns
+        : renderAnswer(q, raw, locale);
+    rows.push(
+      `<p style="margin:14px 0 4px;font-size:13px;color:#666"><strong>Q${q.number}.</strong> ${escapeHtml(
+        prompt
+      )}</p><p style="margin:0 0 4px;font-size:14px;white-space:pre-wrap">${escapeHtml(
+        rendered
+      )}</p>`
+    );
+  }
+  return `<hr style="margin:32px 0;border:none;border-top:1px solid #ddd"><h2 style="font-size:18px;color:#333">${escapeHtml(
+    heading
+  )}</h2>${rows.join("\n")}`;
+}
+
 export async function interpret(localeCode: string, answers: Record<string, unknown>): Promise<string> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error("ANTHROPIC_API_KEY not set");

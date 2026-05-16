@@ -13,9 +13,13 @@ interface Props {
 
 const STORAGE_KEY = "activity-test:draft:v1";
 
+type Step = "email" | "questions";
+
 interface Draft {
+  step: Step;
   answers: Answers;
   email: string;
+  consent: boolean;
   page: number;
 }
 
@@ -26,6 +30,7 @@ export function TestRunner({ locale }: Props) {
   const router = useRouter();
 
   const total = pageCount();
+  const [step, setStep] = useState<Step>("email");
   const [page, setPage] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
   const [email, setEmail] = useState("");
@@ -40,10 +45,12 @@ export function TestRunner({ locale }: Props) {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) {
-        const d = JSON.parse(raw) as Draft;
+        const d = JSON.parse(raw) as Partial<Draft>;
         setAnswers(d.answers ?? {});
         setEmail(d.email ?? "");
+        setConsent(d.consent ?? false);
         setPage(Math.min(Math.max(0, d.page ?? 0), total - 1));
+        setStep(d.step === "questions" ? "questions" : "email");
       }
     } catch {
       /* ignore */
@@ -54,13 +61,16 @@ export function TestRunner({ locale }: Props) {
   useEffect(() => {
     if (!hydrated) return;
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ answers, email, page } satisfies Draft));
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ step, answers, email, consent, page } satisfies Draft)
+      );
     } catch {
       /* ignore quota */
     }
-  }, [answers, email, page, hydrated]);
+  }, [step, answers, email, consent, page, hydrated]);
 
-  // ---- Progress ---------------------------------------------------------------
+  // ---- Progress (counts questions only) ----------------------------------------
   const answeredCount = useMemo(
     () => questions.filter((q) => isAnswered(q, answers[q.id])).length,
     [answers]
@@ -84,6 +94,16 @@ export function TestRunner({ locale }: Props) {
     setAnswers((prev) => ({ ...prev, [id]: v }));
   };
 
+  const continueToQuestions = () => {
+    if (!emailValid || !consent) {
+      setShowErrors(true);
+      return;
+    }
+    setShowErrors(false);
+    setStep("questions");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const goNext = () => {
     const bad = requiredInvalidOnPage();
     if (bad.length > 0) {
@@ -96,6 +116,11 @@ export function TestRunner({ locale }: Props) {
   };
   const goBack = () => {
     setShowErrors(false);
+    if (page === 0) {
+      setStep("email");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
     setPage((p) => Math.max(p - 1, 0));
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -108,6 +133,7 @@ export function TestRunner({ locale }: Props) {
     }
     if (!emailValid || !consent) {
       setShowErrors(true);
+      setStep("email");
       return;
     }
     setSubmitting(true);
@@ -141,32 +167,15 @@ export function TestRunner({ locale }: Props) {
 
   const isLastPage = page === total - 1;
 
-  return (
-    <div className="space-y-6">
-      <header className="space-y-2">
-        <div className="flex items-center justify-between text-sm text-muted">
-          <span>{t("test.page", { current: page + 1, total })}</span>
-          <span>{t("test.progress", { percent })}</span>
-        </div>
-        <div className="progress-bar" role="progressbar" aria-valuenow={percent} aria-valuemin={0} aria-valuemax={100}>
-          <span style={{ width: `${percent}%` }} />
-        </div>
-        <p className="text-xs text-muted">{t("test.saveDraft")}</p>
-      </header>
+  // ---- Render: email step ----------------------------------------------------
+  if (step === "email") {
+    return (
+      <div className="space-y-6">
+        <header className="space-y-2">
+          <h1 className="text-2xl md:text-3xl font-semibold">{t("test.emailStepTitle")}</h1>
+          <p className="text-ink/80">{t("test.emailStepBody")}</p>
+        </header>
 
-      <div className="space-y-4">
-        {pageQuestions.map((q) => (
-          <QuestionField
-            key={q.id}
-            q={q}
-            value={answers[q.id]}
-            onChange={(v) => setAnswer(q.id, v)}
-            invalid={showErrors && q.required && !isAnswered(q, answers[q.id])}
-          />
-        ))}
-      </div>
-
-      {isLastPage && (
         <section className="card space-y-3">
           <label className="block text-sm font-medium" htmlFor="email">
             {t("test.emailLabel")}
@@ -194,12 +203,48 @@ export function TestRunner({ locale }: Props) {
             <span>{t("test.emailConsent")}</span>
           </label>
         </section>
-      )}
+
+        <nav className="flex flex-wrap items-center justify-end gap-3">
+          <button type="button" onClick={continueToQuestions} className="btn-primary">
+            {t("test.continueToQuestions")} →
+          </button>
+        </nav>
+      </div>
+    );
+  }
+
+  // ---- Render: questions step ------------------------------------------------
+  return (
+    <div className="space-y-6">
+      <header className="space-y-2">
+        <div className="flex items-center justify-between text-sm text-muted">
+          <span>{t("test.page", { current: page + 1, total })}</span>
+          <span>{t("test.progress", { percent })}</span>
+        </div>
+        <div className="progress-bar" role="progressbar" aria-valuenow={percent} aria-valuemin={0} aria-valuemax={100}>
+          <span style={{ width: `${percent}%` }} />
+        </div>
+        <p className="text-xs text-muted">
+          {t("test.saveDraft")} · {t("test.deliveringTo", { email })}
+        </p>
+      </header>
+
+      <div className="space-y-4">
+        {pageQuestions.map((q) => (
+          <QuestionField
+            key={q.id}
+            q={q}
+            value={answers[q.id]}
+            onChange={(v) => setAnswer(q.id, v)}
+            invalid={showErrors && q.required && !isAnswered(q, answers[q.id])}
+          />
+        ))}
+      </div>
 
       {submitError && <p role="alert" className="text-sm text-red-600">{submitError}</p>}
 
       <nav className="flex flex-wrap items-center justify-between gap-3">
-        <button type="button" onClick={goBack} disabled={page === 0} className="btn-secondary">
+        <button type="button" onClick={goBack} className="btn-secondary">
           ← {t("test.back")}
         </button>
         {isLastPage ? (

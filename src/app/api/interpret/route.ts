@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { getSupabase } from "@/lib/supabase";
-import { interpret } from "@/lib/interpret";
+import { interpret, renderAnswersHtml } from "@/lib/interpret";
 
 export const runtime = "nodejs";
 // Vercel free-tier serverless caps at ~10s; Pro at 60s. Claude calls regularly
@@ -70,6 +70,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, reason: "no_email_key" });
   }
 
+  const answersHtml = await renderAnswersHtml(
+    row.locale,
+    row.answers as Record<string, unknown>
+  );
+  const emailHtml = `${interpretationHtml}\n${answersHtml}`;
+
   const resend = new Resend(resendKey);
   const subject = SUBJECT_BY_LOCALE[row.locale] ?? SUBJECT_BY_LOCALE.en;
   try {
@@ -77,7 +83,7 @@ export async function POST(req: NextRequest) {
       from,
       to: row.email,
       subject,
-      html: interpretationHtml,
+      html: emailHtml,
     });
   } catch (e) {
     console.error("email send failed", e);
