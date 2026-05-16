@@ -1,0 +1,228 @@
+{
+  "meta": { "language": "日本語" },
+  "landing": {
+    "title": "活動傾向テスト",
+    "subtitle": "全54問。所要時間は約30〜40分。AIによる解説をメールでお届けします。",
+    "chooseLanguage": "言語を選択",
+    "start": "テストを始める",
+    "privacyHeading": "プライバシー",
+    "privacy": "ご回答とメールアドレスは、解説の送付およびテスト改善のため、安全なデータベース(Supabase、EUリージョン)に保存されます。第三者へ提供することはありません。データの削除をご希望の場合は、プロジェクト管理者までご連絡ください。本テストは専門家によるカウンセリングや心理評価の代わりにはなりません。",
+    "estimatedTime": "約30〜40分"
+  },
+  "test": {
+    "page": "{total} ページ中 {current} ページ目",
+    "progress": "{percent}% 完了",
+    "next": "次へ",
+    "back": "戻る",
+    "submit": "回答を送信",
+    "required": "この項目は必須です",
+    "saveDraft": "進行状況は自動保存されます",
+    "openLink": "テストを開く",
+    "pasteResultUrl": "リュッシャー・テストの結果リンクまたはテキストをここに貼り付けてください",
+    "emailLabel": "解説受け取り用のメールアドレス",
+    "emailPlaceholder": "you@example.com",
+    "emailInvalid": "有効なメールアドレスを入力してください",
+    "emailConsent": "回答が保存され、解説がこのメールアドレスに送信されることに同意します。",
+    "validationError": "送信前に必須項目を入力してください。",
+    "rankInstruction": "{min}〜{max}の順位を重複なく付けてください。",
+    "rankDuplicate": "各順位は一度だけ使用してください。",
+    "iqHeader": "問題の種類",
+    "iqHarder": "難しい",
+    "iqEasier": "易しい",
+    "industryHeader": "業界",
+    "industrySelf": "あなた",
+    "industryMother": "あなたのお母さま",
+    "industryFather": "あなたのお父さま"
+  },
+  "confirmation": {
+    "title": "ありがとうございます。回答を受け付けました。",
+    "body": "{email} 宛に約5分以内で解説をお送りします。15分経っても届かない場合は迷惑メールフォルダをご確認ください。",
+    "backHome": "トップへ戻る"
+  },
+  "errors": {
+    "submitFailed": "送信に失敗しました。もう一度お試しください。",
+    "rateLimited": "最近すでに送信されています。しばらくしてから再度お試しください。"
+  },
+  "q1": { "prompt": "リュッシャー・テストを受け、結果のリンクをここに貼り付けてください。" },
+  "q2": { "prompt": "子どもの頃、何になりたかったですか?" },
+  "q3": { "prompt": "子どもの頃、お気に入りの遊びは何でしたか?" },
+  "q4": { "prompt": "好きなスポーツは何ですか?" },
+  "q5": { "prompt": "いくらお金を積まれても手放したくない活動は?" },
+  "q6": { "prompt": "何かを始めるとき、最初にすることは?" },
+  "q7": { "prompt": "人生で最も誇りに思っていることは?" },
+  "q8": { "prompt": "周囲の人があなたに最もよく相談してくる事柄は?" },
+  "q9": { "prompt": "誰に憧れますか?誰に影響を受けていますか?" },
+  "q10": { "prompt": "ご両親の仕事についてどう感じていますか?" },
+  "q11": { "prompt": "小学校・中学校・高校・大学での成績は?態度は?" },
+  "q12": { "prompt": "現在の仕事や主な活動は何ですか?" },
+  "q13": { "prompt": "生年月日、出生地、出生時刻(占星術用)" },
+  "q14": { "prompt": "好きな物語(童話・映画・本)は何ですか?" },
+  "q15": {
+    "prompt": "市場性や利益を考えず、最も好きな業界をチェックしてください……",
+    "subjects": { "self": "……あなた自身", "mother": "……あなたのお母さま", "father": "……あなたのお父さま" },
+    "industries": {
+      "i1": "農業",
+      "i2": "建設",
+      "i3": "商業・物流",
+      "i4": "エンジニアリング",
+      "i5": "教育",
+      "i6": "科学・研究",
+      "i7": "医療",
+      "i8": "芸術・芸能",
+      "i9": "修道・宗教生活",
+      "i10": "食品製造・飲食",
+      "i11": "ファッション",
+      "i12": "軍隊・警察",
+      "i13": "観光・ホスピタリティ",
+      "i14": "消防・救急・災害対応",
+      "i15": "セキュリティ・監視システム",
+      "i16": "法律",
+      "i17": "ビジネス(稼げるなら何でも)",
+      "i18": "IT・プログラミング",
+      "i19": "金融",
+      "i20": "公務員"
+    }
+  },
+  "q16": { "prompt": "どちらが好きですか?", "opt": { "numbers": "数字", "letters": "文字" } },
+  "q17": {
+    "prompt": "1(大好き)〜8(苦手)で、扱うのが好きなものを順位付けしてください:",
+    "opt": { "people": "人", "documents": "書類", "food": "食べ物", "machines": "機械", "computers": "コンピューター", "metal": "金属", "plastic": "プラスチック", "wood_leather": "木 / 革" }
+  },
+  "q18": {
+    "prompt": "自分との近さで1〜4を付けてください:",
+    "opt": { "water": "水", "air": "風", "earth": "土", "fire": "火" }
+  },
+  "q19": {
+    "prompt": "IQテストを受け、難しかった分野と易しかった分野を選んでください:",
+    "items": { "words": "言葉・文字問題", "numbers": "数字・数学問題", "graphics": "図形・画像問題" },
+    "opt": { "harder": "難しい", "easier": "易しい" }
+  },
+  "q20": {
+    "prompt": "仕事で最もやる気が出る目標の種類は?",
+    "opt": { "set_by_management": "上司が設定したもの", "your_own": "自分自身で立てたもの", "set_by_you_for_others": "あなたが他人に設定したもの" }
+  },
+  "q21": {
+    "prompt": "好みの報酬形態は?",
+    "opt": { "fixed_salary": "固定給", "percent_of_projects": "プロジェクトの歩合" }
+  },
+  "q22": {
+    "prompt": "好む働き方は?",
+    "opt": { "in_team": "チームで", "separately_common_cause": "独立して、ただし共通の目的のために", "freelance": "フリーランス", "managing_others": "他者を管理する" }
+  },
+  "q23": {
+    "prompt": "理想の勤務時間は?",
+    "opt": { "as_needed": "必要に応じて", "morning": "午前中", "afternoon": "午後", "classic_9_to_6": "9時〜18時の定時" }
+  },
+  "q24": {
+    "prompt": "理想の職場は?",
+    "opt": { "near_home": "自宅の近く", "city_center": "都心", "mobile_in_city": "市内を移動する仕事", "business_trips": "出張のある仕事" }
+  },
+  "q25": {
+    "prompt": "1〜7の好きな順に並べてください:",
+    "opt": { "sales": "営業", "marketing": "マーケティング・広告", "finance_law": "財務・法務", "service": "サービス", "logistics": "物流", "production": "製造", "management": "経営・管理" }
+  },
+  "q26": {
+    "prompt": "間に合わないとき、あなたは:",
+    "opt": { "warn_ahead": "事前に知らせる", "late_with_excuses": "遅刻して言い訳する", "always_on_time": "いつも間に合う" }
+  },
+  "q27": {
+    "prompt": "頑張っているのに他人が昇進する。あなたの気持ち・考えは?(複数選択可)",
+    "opt": { "envy_them": "うらやましい", "admire_them": "尊敬する", "quietly_upset": "静かに落ち込む", "loudly_indignant": "声を上げて憤る", "angry_at_boss": "上司に腹が立つ", "i_do_something_wrong": "自分に何か原因があるのかもしれない" }
+  },
+  "q28": {
+    "prompt": "仕事はどう評価し、報酬を払うべきだと思いますか?",
+    "opt": { "by_results": "成果に応じて", "by_time_spent": "投入した時間に応じて", "by_difficulty": "難易度に応じて" }
+  },
+  "q29": {
+    "prompt": "時間についての考え。重要度を1〜7で並べてください",
+    "opt": { "spend_on_earning": "お金を稼ぐために使うべき", "always_learning": "常に学ぶことに使うべき", "family_and_friends": "家族や友人と過ごすため", "free_time_for_self": "自分のしたいことに使える自由時間がもっと欲しい", "time_priceless": "時間はかけがえのないもの", "i_get_bored_like_action": "退屈しがちで、動き回るのが好き", "time_flies_fast": "時間はあっという間に過ぎる" }
+  },
+  "q30": {
+    "prompt": "会社の目標には賛成だが、進め方には自分の考えがあるとき:",
+    "opt": { "talk_to_boss_privately": "上司と個別に話す", "open_discussion_with_team": "チームで率直に議論する", "just_do_what_needed": "必要なことを、必要なやり方でただ行う" }
+  },
+  "q31": {
+    "prompt": "なぜ働くのですか?重要度を1〜5で並べてください:",
+    "opt": { "for_money": "お金のため", "help_people": "人を助けるため", "develop_world": "世の中を発展させるため", "strengthen_country": "国を強くするため", "raise_status": "自分の地位を高めるため" }
+  },
+  "q32": {
+    "prompt": "将来の収入の使い道(複数選択可):",
+    "opt": { "for_family": "すべて家庭・家族のため", "for_personal_wants": "自分の欲しいもののため", "for_big_purchase": "大きな買い物のため", "pay_loans": "ローン返済のため" }
+  },
+  "q33": {
+    "prompt": "理想の家族のあり方は?",
+    "opt": { "near_parents": "親の近くで自分の家庭を持つ", "own_family_far_from_parents": "親から離れた所で自分の家庭を持つ", "travel_change_home_is_family": "旅をして変化を楽しむ——家族がいる場所が家" }
+  },
+  "q34": { "prompt": "どこに住みたいですか?", "opt": { "suburban_house": "郊外の戸建て", "city_apartment": "都心のマンション" } },
+  "q35": { "prompt": "不動産や車について:", "opt": { "rent": "賃借する", "own": "所有する" } },
+  "q36": {
+    "prompt": "キャリアプランは?",
+    "opt": { "build_career_in_one_org": "一つの組織で長く働いてキャリアを築く", "try_industries_become_pro": "色々な業界を試し、自分の分野を見つけてプロになる", "learn_and_clone_business": "他者から事業の作り方を学び、それを再現する", "my_own_idea_path_niche": "自分のアイデア・道・ニッチを持っている" }
+  },
+  "q37": {
+    "prompt": "あなたにとって仕事とは(1〜3で順位付け):",
+    "opt": { "income_source": "収入の手段", "inevitability": "避けられないもの", "paid_hobby": "報酬のある趣味" }
+  },
+  "q38": {
+    "prompt": "会社の方針や目標に賛同できないとき:",
+    "opt": { "discuss_with_boss_and_colleagues": "上司や同僚と話し合う", "discuss_with_family_friends_online": "家族・友人・SNSで話す", "not_important_just_work": "気にしない——お給料があれば働く" }
+  },
+  "q39": {
+    "prompt": "仕事を選ぶ際の要素を、重要度1〜5で順位付け:",
+    "opt": { "money": "報酬", "not_dusty": "ラクな仕事", "field_industry": "業界・分野", "what_to_do_specifically": "具体的な仕事内容", "growth_prospects": "成長の見込み" }
+  },
+  "q40": {
+    "prompt": "自分の好みで服装を選べるとき、どう着ますか?",
+    "opt": { "stylish_trendy": "スタイリッシュでトレンドを意識して", "comfortable": "快適に", "suits_me": "似合うものを", "uniform": "制服が好き", "like_friends_colleagues": "友人や同僚と同じように" }
+  },
+  "q41": {
+    "prompt": "仕事外で同僚と過ごすのは好きですか?",
+    "opt": { "if_we_became_friends": "友達になれた相手なら", "part_of_corporate_culture": "会社文化の一部としてなら", "no_enough_at_work": "いいえ、職場で十分です" }
+  },
+  "q42": {
+    "prompt": "余暇の使い方の優先順位を1〜4で:",
+    "opt": { "with_family": "家族と過ごす", "with_friends": "友人と会う", "study_hobby_own_business": "勉強・趣味・自分の活動", "sport_fresh_air": "スポーツ・外の空気" }
+  },
+  "q43": {
+    "prompt": "学ぶことについてどう思いますか?(複数選択可)",
+    "opt": { "dont_like_studying_like_knowing": "勉強は嫌いだが知識は欲しい", "i_like_studying": "勉強が好き", "study_what_helps_earn": "稼ぎにつながることを学ぶ", "grades_motivate": "評価がモチベーションになる", "grades_dont_matter": "評価は重要ではない", "live_and_learn_forever": "生涯学び続けたい" }
+  },
+  "q44": {
+    "prompt": "責任についてどう考えますか?",
+    "opt": { "afraid_of_it": "怖い", "very_responsible": "自分は非常に責任感が強い", "should_match_pay": "責任は報酬に見合うべき" }
+  },
+  "q45": {
+    "prompt": "上司・経営層をどう捉えていますか?",
+    "opt": { "father_and_teacher": "父であり師", "want_to_be_boss": "自分が上司になりたい", "structural_unit": "組織上の一つの単位" }
+  },
+  "q46": {
+    "prompt": "願いごとを1〜7の順で挙げてください:",
+    "opt": { "health": "健康", "prosperity": "繁栄", "wisdom": "知恵", "power_strength": "権力・力", "happy_family": "幸せな家族", "thriving_country": "繁栄する国", "peace_love_on_earth": "地球の平和と愛" }
+  },
+  "q47": {
+    "prompt": "コミュニケーションの好みを1〜3の順で:",
+    "opt": { "write": "文字で書く", "call": "電話する", "meet_in_person": "対面で会う" }
+  },
+  "q48": {
+    "prompt": "社会的な好みを1〜6の順で並べてください:",
+    "opt": { "with_1_3_close_people": "1〜3人の親しい人と", "in_solitude": "ひとりで", "in_large_group": "大人数のグループで", "in_small_group": "少人数のグループで", "center_of_attention": "注目の中心にいる", "be_leader": "リーダーでいる" }
+  },
+  "q49": {
+    "prompt": "あなたと電子機器との関係:",
+    "opt": { "best_friends": "親友のような存在", "geek_cyborg": "私はギーク、ほぼサイボーグ", "as_needed": "必要に応じて使う", "dislike": "あまり好きではない" }
+  },
+  "q50": { "prompt": "もし既に「すべて」が満たされていたら——自分も身近な人も困らない状態だったら——どんなことに時間を使いますか?" },
+  "q51": {
+    "prompt": "1(ひどい)〜10(素晴らしい)で評価してください:",
+    "items": { "parents_relationship": "ご両親の関係", "personal_life": "あなたの私生活", "overall_life_satisfaction": "人生全体の満足度 / 幸福度" }
+  },
+  "q52": {
+    "prompt": "好き・苦手を1〜3で順位付け:",
+    "opt": { "start_from_zero_others_continue": "ゼロから始め、続きは他の人に任せる", "take_existing_and_polish": "既存のものを引き継ぎ整え、完成度を上げる", "do_everything_start_to_finish": "最初から最後まで全部自分でやる" }
+  },
+  "q53": {
+    "prompt": "自分に最もよく当てはまるものを選んでください(複数選択可):",
+    "opt": { "creative_person": "創造的な人", "reliable_performer": "頼れる実行者", "doer_achiever": "行動派・達成者", "techie": "理系タイプ", "humanitarian": "文系タイプ", "master_craftsman": "職人・マイスター" }
+  },
+  "q54": { "prompt": "もう一度リュッシャー・テストを受け、新しい結果のリンクを貼り付けてください:" }
+}

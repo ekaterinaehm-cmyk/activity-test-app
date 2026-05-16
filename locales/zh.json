@@ -1,0 +1,228 @@
+{
+  "meta": { "language": "简体中文" },
+  "landing": {
+    "title": "活动倾向测试",
+    "subtitle": "54 道题。约 30–40 分钟。AI 生成的解读将通过电子邮件发送给您。",
+    "chooseLanguage": "选择语言",
+    "start": "开始测试",
+    "privacyHeading": "隐私说明",
+    "privacy": "您的答案与邮箱地址会保存在安全的数据库中（Supabase，欧盟区域），以便我们发送解读并改进测试。数据不会与第三方共享。如需删除您的数据,请联系项目所有者。本测试不能替代专业的心理评估或职业咨询。",
+    "estimatedTime": "约 30–40 分钟"
+  },
+  "test": {
+    "page": "第 {current} 页,共 {total} 页",
+    "progress": "已完成 {percent}%",
+    "next": "下一步",
+    "back": "上一步",
+    "submit": "提交答案",
+    "required": "此项为必填",
+    "saveDraft": "进度会自动保存",
+    "openLink": "打开测试",
+    "pasteResultUrl": "在此处粘贴您的 Lüscher 测试结果链接或文本",
+    "emailLabel": "用于接收解读的电子邮箱",
+    "emailPlaceholder": "you@example.com",
+    "emailInvalid": "请填写有效的电子邮箱",
+    "emailConsent": "我同意保存我的答案并将解读发送到此邮箱。",
+    "validationError": "请在提交前完成必填项。",
+    "rankInstruction": "请为各项分配 {min} 到 {max} 的排名,不可重复。",
+    "rankDuplicate": "每个排名仅可使用一次。",
+    "iqHeader": "题型",
+    "iqHarder": "较难",
+    "iqEasier": "较易",
+    "industryHeader": "行业",
+    "industrySelf": "您",
+    "industryMother": "您的母亲",
+    "industryFather": "您的父亲"
+  },
+  "confirmation": {
+    "title": "感谢您的提交!",
+    "body": "您的解读将在约 5 分钟内发送到 {email}。如果 15 分钟后仍未收到,请查看垃圾邮件文件夹。",
+    "backHome": "返回首页"
+  },
+  "errors": {
+    "submitFailed": "提交失败,请重试。",
+    "rateLimited": "您最近已提交过测试,请稍后再试。"
+  },
+  "q1": { "prompt": "请完成 Lüscher 八色测试,将结果链接粘贴到此处。" },
+  "q2": { "prompt": "您小时候想成为什么样的人?" },
+  "q3": { "prompt": "您童年时最喜欢的游戏是什么?" },
+  "q4": { "prompt": "您最喜欢的运动是什么?" },
+  "q5": { "prompt": "什么活动您再多钱也不愿放弃?" },
+  "q6": { "prompt": "开始一件新事情时,您首先做什么?" },
+  "q7": { "prompt": "您一生中最自豪的成就是什么?" },
+  "q8": { "prompt": "别人最常因为什么事找您?" },
+  "q9": { "prompt": "您羡慕谁?谁能激励您?" },
+  "q10": { "prompt": "您如何看待父母从事的工作?" },
+  "q11": { "prompt": "您在小学 / 初中 / 高中 / 大学的成绩与表现如何?" },
+  "q12": { "prompt": "您目前的职业或主要活动是什么?" },
+  "q13": { "prompt": "出生日期、地点与时间(用于占星)" },
+  "q14": { "prompt": "您最喜欢的故事——童话、电影或书?" },
+  "q15": {
+    "prompt": "不考虑市场与收益,请勾选最喜欢的行业……",
+    "subjects": { "self": "……您自己", "mother": "……您的母亲", "father": "……您的父亲" },
+    "industries": {
+      "i1": "农业",
+      "i2": "建筑",
+      "i3": "贸易与物流",
+      "i4": "工程",
+      "i5": "教育",
+      "i6": "科学",
+      "i7": "医学",
+      "i8": "艺术、演艺",
+      "i9": "宗教 / 修行生活",
+      "i10": "食品生产、餐饮",
+      "i11": "时尚",
+      "i12": "军队、警察",
+      "i13": "旅游与酒店业",
+      "i14": "消防、急救、紧急救援",
+      "i15": "安保与监控系统",
+      "i16": "法律",
+      "i17": "商业(任何能赚钱的)",
+      "i18": "IT、编程",
+      "i19": "金融",
+      "i20": "公务员"
+    }
+  },
+  "q16": { "prompt": "您更喜欢哪一个?", "opt": { "numbers": "数字", "letters": "字母 / 文字" } },
+  "q17": {
+    "prompt": "从 1(最喜欢)到 8(最不喜欢)排序——您最喜欢与什么打交道:",
+    "opt": { "people": "人", "documents": "文件", "food": "食物", "machines": "机械", "computers": "计算机", "metal": "金属", "plastic": "塑料", "wood_leather": "木材 / 皮革" }
+  },
+  "q18": {
+    "prompt": "按与您的亲近程度从 1 到 4 排序:",
+    "opt": { "water": "水", "air": "风", "earth": "土", "fire": "火" }
+  },
+  "q19": {
+    "prompt": "请完成一次 IQ 测试,标出哪类题目较难、哪类较易:",
+    "items": { "words": "文字与语言类题目", "numbers": "数字与数学类题目", "graphics": "图形 / 图像类题目" },
+    "opt": { "harder": "较难", "easier": "较易" }
+  },
+  "q20": {
+    "prompt": "哪种目标最能激励您工作?",
+    "opt": { "set_by_management": "上级设定的", "your_own": "自己设定的", "set_by_you_for_others": "您为他人设定的" }
+  },
+  "q21": {
+    "prompt": "您更喜欢哪种报酬方式?",
+    "opt": { "fixed_salary": "固定工资", "percent_of_projects": "项目分成" }
+  },
+  "q22": {
+    "prompt": "您更倾向于哪种工作方式?",
+    "opt": { "in_team": "团队协作", "separately_common_cause": "独立工作但服务共同目标", "freelance": "自由职业", "managing_others": "管理他人" }
+  },
+  "q23": {
+    "prompt": "您理想的工作时间是:",
+    "opt": { "as_needed": "按需安排", "morning": "上午", "afternoon": "下午", "classic_9_to_6": "经典的 9 到 18 点" }
+  },
+  "q24": {
+    "prompt": "您理想的工作地点应该是:",
+    "opt": { "near_home": "离家近", "city_center": "市中心", "mobile_in_city": "城市内流动", "business_trips": "需要出差" }
+  },
+  "q25": {
+    "prompt": "从 1 到 7 排名:",
+    "opt": { "sales": "销售", "marketing": "市场与广告", "finance_law": "金融与法务", "service": "服务", "logistics": "物流", "production": "生产", "management": "管理" }
+  },
+  "q26": {
+    "prompt": "当您赶不上时间时:",
+    "opt": { "warn_ahead": "提前通知", "late_with_excuses": "迟到并找借口", "always_on_time": "我总是能准时" }
+  },
+  "q27": {
+    "prompt": "您很努力,但被提拔的是别人。您怎么想 / 感觉?(可多选)",
+    "opt": { "envy_them": "羡慕他们", "admire_them": "钦佩他们", "quietly_upset": "默默难过", "loudly_indignant": "公开愤慨", "angry_at_boss": "对上司不满", "i_do_something_wrong": "可能是我哪里做错了" }
+  },
+  "q28": {
+    "prompt": "工作应该如何评价与支付报酬?",
+    "opt": { "by_results": "按结果", "by_time_spent": "按耗时", "by_difficulty": "按难度" }
+  },
+  "q29": {
+    "prompt": "您如何看待时间?请按重要性从 1 到 7 排序",
+    "opt": { "spend_on_earning": "应用于挣钱", "always_learning": "应永远用于学习", "family_and_friends": "应与家人朋友共度", "free_time_for_self": "我想要更多自由时间做想做的事", "time_priceless": "时间无价", "i_get_bored_like_action": "我常感无聊,喜欢有事可做", "time_flies_fast": "时间过得很快" }
+  },
+  "q30": {
+    "prompt": "您认同公司目标,但对流程有自己的看法:",
+    "opt": { "talk_to_boss_privately": "私下与上司沟通", "open_discussion_with_team": "在团队中公开讨论", "just_do_what_needed": "按要求把该做的做好" }
+  },
+  "q31": {
+    "prompt": "您为何工作?请按重要性从 1 到 5 排序:",
+    "opt": { "for_money": "为了钱", "help_people": "为了帮助他人", "develop_world": "为了推动世界发展", "strengthen_country": "为了让国家更强", "raise_status": "为了提升自己的地位" }
+  },
+  "q32": {
+    "prompt": "您对未来收入的计划(可多选):",
+    "opt": { "for_family": "全为家庭和家人", "for_personal_wants": "为个人需求与愿望", "for_big_purchase": "用于大额购置", "pay_loans": "偿还贷款" }
+  },
+  "q33": {
+    "prompt": "您偏好怎样的家庭生活方式?",
+    "opt": { "near_parents": "与自己的家庭住在父母附近", "own_family_far_from_parents": "与自己的家庭住得远离父母", "travel_change_home_is_family": "四处迁徙——家人在哪里,家就在哪里" }
+  },
+  "q34": { "prompt": "您想住在哪里?", "opt": { "suburban_house": "郊区独栋", "city_apartment": "市区公寓" } },
+  "q35": { "prompt": "房产与汽车:", "opt": { "rent": "租赁", "own": "拥有" } },
+  "q36": {
+    "prompt": "您的职业规划是什么?",
+    "opt": { "build_career_in_one_org": "在一家机构内长期发展", "try_industries_become_pro": "尝试不同行业,找到自己的领域并成为专家", "learn_and_clone_business": "向他人学习创业,然后复制经验", "my_own_idea_path_niche": "我有自己的想法、路径与定位" }
+  },
+  "q37": {
+    "prompt": "对您来说工作是(排序 1 到 3):",
+    "opt": { "income_source": "收入来源", "inevitability": "无法避免的事", "paid_hobby": "有偿的爱好" }
+  },
+  "q38": {
+    "prompt": "如果您不认同公司方针或目标:",
+    "opt": { "discuss_with_boss_and_colleagues": "与上司和同事讨论", "discuss_with_family_friends_online": "与家人朋友或在网络上讨论", "not_important_just_work": "无所谓——给我钱就干" }
+  },
+  "q39": {
+    "prompt": "请按 1 到 5 排序选择工作时各因素的重要性:",
+    "opt": { "money": "薪酬", "not_dusty": "轻松不累", "field_industry": "行业领域", "what_to_do_specifically": "具体做什么", "growth_prospects": "发展前景" }
+  },
+  "q40": {
+    "prompt": "可以自由选择时,您怎么穿?",
+    "opt": { "stylish_trendy": "时尚有型", "comfortable": "舒适为主", "suits_me": "适合自己的", "uniform": "我喜欢制服", "like_friends_colleagues": "和朋友同事一样" }
+  },
+  "q41": {
+    "prompt": "您喜欢在工作之外与同事相处吗?",
+    "opt": { "if_we_became_friends": "成为朋友之后会", "part_of_corporate_culture": "这是公司文化的一部分", "no_enough_at_work": "不,工作时已经够了" }
+  },
+  "q42": {
+    "prompt": "您如何安排空闲时间?请按 1 到 4 排序",
+    "opt": { "with_family": "与家人在一起", "with_friends": "与朋友见面", "study_hobby_own_business": "学习 / 爱好 / 自己的事", "sport_fresh_air": "运动 / 户外" }
+  },
+  "q43": {
+    "prompt": "您如何看待学习?可多选。",
+    "opt": { "dont_like_studying_like_knowing": "不喜欢学习,但喜欢有知识", "i_like_studying": "喜欢学习", "study_what_helps_earn": "学习能帮我挣钱的内容", "grades_motivate": "成绩能激励我", "grades_dont_matter": "成绩不重要", "live_and_learn_forever": "活到老学到老" }
+  },
+  "q44": {
+    "prompt": "您如何看待责任?",
+    "opt": { "afraid_of_it": "我害怕承担", "very_responsible": "我是个很有责任感的人", "should_match_pay": "责任应与报酬相称" }
+  },
+  "q45": {
+    "prompt": "您如何看待上级 / 领导?",
+    "opt": { "father_and_teacher": "像父亲与老师", "want_to_be_boss": "我想成为领导", "structural_unit": "只是组织结构中的一个单位" }
+  },
+  "q46": {
+    "prompt": "请许下心愿,按 1 到 7 排序:",
+    "opt": { "health": "健康", "prosperity": "繁荣富足", "wisdom": "智慧", "power_strength": "权力 / 力量", "happy_family": "幸福的家庭", "thriving_country": "繁荣的国家", "peace_love_on_earth": "世界的和平与爱" }
+  },
+  "q47": {
+    "prompt": "您倾向哪种沟通方式(排序 1 到 3):",
+    "opt": { "write": "文字", "call": "电话", "meet_in_person": "见面" }
+  },
+  "q48": {
+    "prompt": "您的社交偏好——请按 1 到 6 排序:",
+    "opt": { "with_1_3_close_people": "与 1–3 位熟人在一起", "in_solitude": "独处", "in_large_group": "在大群体中", "in_small_group": "在小群体中", "center_of_attention": "成为关注的中心", "be_leader": "成为领导者" }
+  },
+  "q49": {
+    "prompt": "您与电子产品的关系:",
+    "opt": { "best_friends": "最好的朋友", "geek_cyborg": "我是极客,几乎是半机械人", "as_needed": "按需使用", "dislike": "不太喜欢" }
+  },
+  "q50": { "prompt": "假如您已经拥有了一切——您和家人朋友所有需求都已满足,您会用时间去做什么?" },
+  "q51": {
+    "prompt": "请从 1(很差)到 10(非常好)评分:",
+    "items": { "parents_relationship": "您父母之间的关系", "personal_life": "您的私人生活", "overall_life_satisfaction": "整体生活满意度 / 幸福水平" }
+  },
+  "q52": {
+    "prompt": "您更喜欢和更不喜欢哪种,从 1 到 3 排序:",
+    "opt": { "start_from_zero_others_continue": "从零开始,让其他人继续完成", "take_existing_and_polish": "接手已有的东西,加以完善", "do_everything_start_to_finish": "从头到尾完整地做完" }
+  },
+  "q53": {
+    "prompt": "请选择最能描述您的项(可多选):",
+    "opt": { "creative_person": "有创造力的人", "reliable_performer": "可靠的执行者", "doer_achiever": "行动派 / 成就者", "techie": "理工型", "humanitarian": "人文型", "master_craftsman": "工匠 / 手艺人" }
+  },
+  "q54": { "prompt": "请再做一次 Lüscher 测试,将新的结果链接粘贴到此处:" }
+}

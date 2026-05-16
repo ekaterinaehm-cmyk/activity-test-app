@@ -8,10 +8,10 @@
  * translations committed; running `npm run translate` produces the rest and
  * you can add them to this array when you've reviewed the output.
  */
-export const allLocales = ["en", "ru", "de", "fr", "es", "it", "pt", "pl", "uk"] as const;
+export const allLocales = ["en", "ru", "de", "fr", "es", "it", "pt", "pl", "uk", "zh", "ja"] as const;
 export type Locale = (typeof allLocales)[number];
 
-export const locales: Locale[] = ["en", "ru"];
+export const locales: Locale[] = ["en", "ru", "de", "fr", "it", "zh", "ja"];
 export const defaultLocale: Locale = "en";
 
 export const localeNames: Record<Locale, string> = {
@@ -24,4 +24,6 @@ export const localeNames: Record<Locale, string> = {
   pt: "Português",
   pl: "Polski",
   uk: "Українська",
+  zh: "简体中文",
+  ja: "日本語",
 };

@@ -1,0 +1,228 @@
+{
+  "meta": { "language": "Français" },
+  "landing": {
+    "title": "Test d'activité",
+    "subtitle": "54 questions. Environ 30 à 40 minutes. Une interprétation générée par IA vous sera envoyée par e-mail.",
+    "chooseLanguage": "Choisir une langue",
+    "start": "Commencer le test",
+    "privacyHeading": "Confidentialité",
+    "privacy": "Vos réponses et votre adresse e-mail sont conservées dans une base de données sécurisée (Supabase, région UE) pour que nous puissions vous envoyer votre interprétation et améliorer le test. Les données ne sont pas partagées avec des tiers. Pour supprimer vos données, écrivez à la propriétaire du projet. Ce test ne remplace pas un conseil professionnel en orientation ou un suivi psychologique.",
+    "estimatedTime": "≈ 30–40 minutes"
+  },
+  "test": {
+    "page": "Page {current} sur {total}",
+    "progress": "{percent}% terminé",
+    "next": "Suivant",
+    "back": "Retour",
+    "submit": "Envoyer les réponses",
+    "required": "Ce champ est obligatoire",
+    "saveDraft": "La progression est enregistrée automatiquement",
+    "openLink": "Ouvrir le test",
+    "pasteResultUrl": "Collez ici le lien ou le texte de votre résultat Lüscher",
+    "emailLabel": "Votre e-mail pour recevoir l'interprétation",
+    "emailPlaceholder": "vous@exemple.com",
+    "emailInvalid": "Veuillez entrer une adresse e-mail valide",
+    "emailConsent": "J'accepte que mes réponses soient enregistrées et que l'interprétation soit envoyée à cette adresse.",
+    "validationError": "Veuillez compléter les champs obligatoires avant d'envoyer.",
+    "rankInstruction": "Attribuez les rangs de {min} à {max} — sans doublons.",
+    "rankDuplicate": "Chaque rang doit être utilisé exactement une fois.",
+    "iqHeader": "Catégorie de tâche",
+    "iqHarder": "Plus difficile",
+    "iqEasier": "Plus facile",
+    "industryHeader": "Secteur",
+    "industrySelf": "Vous",
+    "industryMother": "Votre mère",
+    "industryFather": "Votre père"
+  },
+  "confirmation": {
+    "title": "Merci ! Vos réponses ont bien été reçues.",
+    "body": "Votre interprétation arrivera à {email} dans environ 5 minutes. Si elle n'est pas là après 15 minutes, vérifiez votre dossier spam.",
+    "backHome": "Retour à l'accueil"
+  },
+  "errors": {
+    "submitFailed": "Impossible d'envoyer vos réponses. Réessayez.",
+    "rateLimited": "Vous avez déjà envoyé le test récemment. Réessayez plus tard."
+  },
+  "q1": { "prompt": "Faites le test des couleurs de Lüscher. Collez le lien du résultat ici." },
+  "q2": { "prompt": "Que vouliez-vous devenir quand vous étiez enfant ?" },
+  "q3": { "prompt": "Quel était votre jeu préféré dans l'enfance ?" },
+  "q4": { "prompt": "Quel est votre sport préféré ?" },
+  "q5": { "prompt": "Quelle activité ne céderiez-vous pour rien au monde ?" },
+  "q6": { "prompt": "Quand vous commencez quelque chose, que faites-vous en premier ?" },
+  "q7": { "prompt": "De quoi êtes-vous le plus fier·ère dans votre vie ?" },
+  "q8": { "prompt": "Pour quoi les autres viennent-ils le plus souvent vous voir ?" },
+  "q9": { "prompt": "Qui enviez-vous ? Qui vous inspire ?" },
+  "q10": { "prompt": "Que pensez-vous de ce que font vos parents ?" },
+  "q11": { "prompt": "Vos notes à l'école primaire / collège / lycée / études supérieures ? Votre comportement ?" },
+  "q12": { "prompt": "Quel est votre travail ou votre activité principale actuellement ?" },
+  "q13": { "prompt": "Date, lieu et heure de naissance (pour l'astrologie)" },
+  "q14": { "prompt": "Votre histoire préférée — conte, film ou livre ?" },
+  "q15": {
+    "prompt": "Sans tenir compte du marché ni de la rentabilité, cochez les secteurs qui plaisent le plus…",
+    "subjects": { "self": "… à vous", "mother": "… à votre mère", "father": "… à votre père" },
+    "industries": {
+      "i1": "Agriculture",
+      "i2": "Construction",
+      "i3": "Commerce et logistique",
+      "i4": "Ingénierie",
+      "i5": "Éducation",
+      "i6": "Sciences",
+      "i7": "Médecine",
+      "i8": "Arts, spectacle",
+      "i9": "Vie monastique / religieuse",
+      "i10": "Production alimentaire, restauration",
+      "i11": "Mode",
+      "i12": "Forces armées, police",
+      "i13": "Tourisme et hôtellerie",
+      "i14": "Pompiers, secours, urgences",
+      "i15": "Sécurité, systèmes de surveillance",
+      "i16": "Droit",
+      "i17": "Affaires (peu importe, tant que ça rapporte)",
+      "i18": "IT, programmation",
+      "i19": "Finance",
+      "i20": "Fonction publique (fonctionnariat)"
+    }
+  },
+  "q16": { "prompt": "Vous préférez :", "opt": { "numbers": "Les chiffres", "letters": "Les lettres" } },
+  "q17": {
+    "prompt": "Classez de 1 (j'adore) à 8 (je déteste) — avec quoi vous aimez le plus travailler :",
+    "opt": { "people": "Les gens", "documents": "Les documents", "food": "La nourriture", "machines": "Les machines", "computers": "Les ordinateurs", "metal": "Le métal", "plastic": "Le plastique", "wood_leather": "Le bois / le cuir" }
+  },
+  "q18": {
+    "prompt": "Classez de 1 à 4 selon votre proximité :",
+    "opt": { "water": "Eau", "air": "Air", "earth": "Terre", "fire": "Feu" }
+  },
+  "q19": {
+    "prompt": "Faites un test de QI et indiquez quelles catégories ont été plus difficiles ou plus faciles :",
+    "items": { "words": "Mots et exercices avec lettres", "numbers": "Chiffres et exercices mathématiques", "graphics": "Tâches graphiques / visuelles" },
+    "opt": { "harder": "Plus difficile", "easier": "Plus facile" }
+  },
+  "q20": {
+    "prompt": "Quel type d'objectifs vous motive le plus au travail ?",
+    "opt": { "set_by_management": "Fixés par la direction", "your_own": "Les vôtres", "set_by_you_for_others": "Fixés par vous pour d'autres" }
+  },
+  "q21": {
+    "prompt": "Quel type de rémunération préférez-vous ?",
+    "opt": { "fixed_salary": "Salaire fixe", "percent_of_projects": "% sur les projets" }
+  },
+  "q22": {
+    "prompt": "Vous préférez travailler :",
+    "opt": { "in_team": "En équipe", "separately_common_cause": "Indépendamment mais sur un but commun", "freelance": "En freelance", "managing_others": "En dirigeant les autres" }
+  },
+  "q23": {
+    "prompt": "Vos horaires idéaux :",
+    "opt": { "as_needed": "Selon les besoins", "morning": "Le matin", "afternoon": "L'après-midi", "classic_9_to_6": "Classique de 9 h à 18 h" }
+  },
+  "q24": {
+    "prompt": "Votre lieu de travail devrait être :",
+    "opt": { "near_home": "Près de chez vous", "city_center": "Au centre-ville", "mobile_in_city": "En déplacement en ville", "business_trips": "Avec déplacements professionnels" }
+  },
+  "q25": {
+    "prompt": "Établissez un classement de 1 à 7 :",
+    "opt": { "sales": "Vente", "marketing": "Marketing et publicité", "finance_law": "Finance et droit", "service": "Service", "logistics": "Logistique", "production": "Production", "management": "Management" }
+  },
+  "q26": {
+    "prompt": "Quand vous êtes en retard :",
+    "opt": { "warn_ahead": "Je préviens à l'avance", "late_with_excuses": "J'arrive en retard et je m'excuse", "always_on_time": "Je suis toujours à l'heure" }
+  },
+  "q27": {
+    "prompt": "Vous faites des efforts mais ce sont d'autres qui sont promus. Que pensez-vous / ressentez-vous ? (plusieurs réponses possibles)",
+    "opt": { "envy_them": "Je les envie", "admire_them": "Je les admire", "quietly_upset": "Tristement déçu·e", "loudly_indignant": "Indigné·e à voix haute", "angry_at_boss": "En colère contre le patron", "i_do_something_wrong": "Je dois faire quelque chose de travers" }
+  },
+  "q28": {
+    "prompt": "Comment le travail devrait-il être évalué et payé ?",
+    "opt": { "by_results": "Selon les résultats", "by_time_spent": "Selon le temps passé", "by_difficulty": "Selon la difficulté" }
+  },
+  "q29": {
+    "prompt": "Que pensez-vous du temps ? Classez l'importance de 1 à 7",
+    "opt": { "spend_on_earning": "Doit être consacré à gagner de l'argent", "always_learning": "Doit toujours être consacré à apprendre", "family_and_friends": "Passé avec la famille et les amis", "free_time_for_self": "Je veux plus de temps libre pour faire ce que je veux", "time_priceless": "Le temps n'a pas de prix", "i_get_bored_like_action": "Je m'ennuie souvent, j'adore l'action", "time_flies_fast": "Le temps file vite" }
+  },
+  "q30": {
+    "prompt": "Vous êtes d'accord avec les objectifs de l'entreprise mais avez une vision différente du processus :",
+    "opt": { "talk_to_boss_privately": "Vous en parlez en privé avec votre chef·fe", "open_discussion_with_team": "Vous ouvrez la discussion dans l'équipe", "just_do_what_needed": "Vous faites simplement ce qu'il faut, comme il faut" }
+  },
+  "q31": {
+    "prompt": "Pourquoi travaillez-vous ? Classez de 1 à 5 :",
+    "opt": { "for_money": "Pour l'argent", "help_people": "Pour aider les gens", "develop_world": "Pour faire avancer le monde", "strengthen_country": "Pour renforcer mon pays", "raise_status": "Pour élever mon statut" }
+  },
+  "q32": {
+    "prompt": "Vos projets pour vos revenus futurs (plusieurs possibles) :",
+    "opt": { "for_family": "Tout pour la maison et la famille", "for_personal_wants": "Pour mes envies personnelles", "for_big_purchase": "Pour un gros achat", "pay_loans": "Pour rembourser des crédits" }
+  },
+  "q33": {
+    "prompt": "Quel style de vie familiale préférez-vous ?",
+    "opt": { "near_parents": "Vivre avec ma famille près de mes parents", "own_family_far_from_parents": "Vivre avec ma famille loin de mes parents", "travel_change_home_is_family": "Voyager et tout changer — ma famille est mon foyer" }
+  },
+  "q34": { "prompt": "Où voulez-vous vivre ?", "opt": { "suburban_house": "Une maison en banlieue", "city_apartment": "Un appartement en ville" } },
+  "q35": { "prompt": "Immobilier et voitures :", "opt": { "rent": "Location", "own": "Propriété" } },
+  "q36": {
+    "prompt": "Quel est votre plan de carrière ?",
+    "opt": { "build_career_in_one_org": "Rester dans une organisation et y faire carrière", "try_industries_become_pro": "Essayer plusieurs secteurs, trouver mon truc et devenir pro", "learn_and_clone_business": "Apprendre des autres comment monter une affaire et la reproduire", "my_own_idea_path_niche": "Mon idée, ma vision, mon chemin, ma niche" }
+  },
+  "q37": {
+    "prompt": "Le travail c'est pour vous (classez 1 à 3) :",
+    "opt": { "income_source": "Une source de revenus", "inevitability": "Une fatalité", "paid_hobby": "Un hobby rémunéré" }
+  },
+  "q38": {
+    "prompt": "Si vous n'êtes pas d'accord avec la politique ou les objectifs de l'entreprise :",
+    "opt": { "discuss_with_boss_and_colleagues": "Vous en parlez à votre chef·fe et à vos collègues", "discuss_with_family_friends_online": "Vous en parlez en famille / entre amis / en ligne", "not_important_just_work": "Peu importe — je travaille tant que je suis payé·e" }
+  },
+  "q39": {
+    "prompt": "Classez l'importance de ces critères au moment de choisir un emploi, 1 à 5 :",
+    "opt": { "money": "L'argent", "not_dusty": "Pas trop fatigant", "field_industry": "Le secteur / l'industrie", "what_to_do_specifically": "Ce que je ferais concrètement", "growth_prospects": "Les perspectives d'évolution" }
+  },
+  "q40": {
+    "prompt": "Comment vous habillez-vous quand vous êtes libre de choisir ?",
+    "opt": { "stylish_trendy": "Stylé·e et tendance", "comfortable": "Confortablement", "suits_me": "Comme ça me va bien", "uniform": "J'aime les uniformes", "like_friends_colleagues": "Comme mes amis et collègues" }
+  },
+  "q41": {
+    "prompt": "Aimez-vous voir vos collègues en dehors du travail ?",
+    "opt": { "if_we_became_friends": "Si on est devenus amis", "part_of_corporate_culture": "Ça fait partie de la culture d'entreprise", "no_enough_at_work": "Non, je les vois assez au travail" }
+  },
+  "q42": {
+    "prompt": "Comment passez-vous votre temps libre ? Priorisez de 1 à 4",
+    "opt": { "with_family": "En famille", "with_friends": "Avec des amis", "study_hobby_own_business": "Études / loisirs / projet personnel", "sport_fresh_air": "Sport / grand air" }
+  },
+  "q43": {
+    "prompt": "Que pensez-vous des études ? Plusieurs possibles.",
+    "opt": { "dont_like_studying_like_knowing": "Je n'aime pas étudier, mais j'aime savoir", "i_like_studying": "J'aime étudier", "study_what_helps_earn": "J'étudie ce qui m'aide à gagner ma vie", "grades_motivate": "Les notes me motivent", "grades_dont_matter": "Les notes n'ont pas d'importance", "live_and_learn_forever": "On apprend toute sa vie" }
+  },
+  "q44": {
+    "prompt": "Que pensez-vous des responsabilités ?",
+    "opt": { "afraid_of_it": "J'en ai peur", "very_responsible": "Je suis quelqu'un de très responsable", "should_match_pay": "Elles doivent être proportionnelles au salaire" }
+  },
+  "q45": {
+    "prompt": "Comment voyez-vous vos supérieurs ?",
+    "opt": { "father_and_teacher": "Comme un père et un enseignant", "want_to_be_boss": "Je veux être le·la chef·fe", "structural_unit": "Une unité structurelle" }
+  },
+  "q46": {
+    "prompt": "Faites des vœux, de 1 à 7 :",
+    "opt": { "health": "La santé", "prosperity": "La prospérité", "wisdom": "La sagesse", "power_strength": "Le pouvoir / la force", "happy_family": "Une famille heureuse", "thriving_country": "Un pays prospère", "peace_love_on_earth": "La paix et l'amour sur Terre" }
+  },
+  "q47": {
+    "prompt": "Pour communiquer, vous préférez (classez 1 à 3) :",
+    "opt": { "write": "Écrire", "call": "Appeler", "meet_in_person": "Se voir en personne" }
+  },
+  "q48": {
+    "prompt": "Vos préférences sociales — classez de 1 à 6 :",
+    "opt": { "with_1_3_close_people": "Avec 1 à 3 personnes proches", "in_solitude": "Dans la solitude", "in_large_group": "Dans un grand groupe", "in_small_group": "Dans un petit groupe", "center_of_attention": "Au centre de l'attention", "be_leader": "En tant que leader" }
+  },
+  "q49": {
+    "prompt": "Vous et l'électronique :",
+    "opt": { "best_friends": "Les meilleurs amis", "geek_cyborg": "Je suis un geek, presque un cyborg", "as_needed": "Je m'en sers selon les besoins", "dislike": "Je n'aime pas trop" }
+  },
+  "q50": { "prompt": "Si vous aviez déjà TOUT — tous les besoins comblés pour vous et vos proches — que feriez-vous de votre temps ?" },
+  "q51": {
+    "prompt": "Notez de 1 (terrible) à 10 (génial) :",
+    "items": { "parents_relationship": "La relation entre vos parents", "personal_life": "Votre vie personnelle", "overall_life_satisfaction": "Votre satisfaction de vie globale / niveau de bonheur" }
+  },
+  "q52": {
+    "prompt": "Ce que vous aimez plus et moins, classez de 1 à 3 :",
+    "opt": { "start_from_zero_others_continue": "Démarrer de zéro et laisser les autres continuer", "take_existing_and_polish": "Prendre quelque chose d'existant et l'améliorer", "do_everything_start_to_finish": "Tout faire du début à la fin" }
+  },
+  "q53": {
+    "prompt": "Choisissez ce qui vous décrit le mieux (plusieurs possibles) :",
+    "opt": { "creative_person": "Une personne créative", "reliable_performer": "Un·e exécutant·e fiable", "doer_achiever": "Quelqu'un d'actif / qui accomplit", "techie": "Plutôt scientifique / technique", "humanitarian": "Plutôt littéraire / humaniste", "master_craftsman": "Un·e maître / artisan·e" }
+  },
+  "q54": { "prompt": "Refaites le test de Lüscher et collez le nouveau lien ici :" }
+}
