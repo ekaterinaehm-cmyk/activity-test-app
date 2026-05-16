@@ -36,9 +36,8 @@ export function QuestionField({ q, value, onChange, invalid }: Props) {
 function Body({ q, value, onChange }: Omit<Props, "invalid">) {
   switch (q.type) {
     case "free_text":
-      return <FreeText q={q} value={value as string | undefined} onChange={onChange} />;
     case "free_text_long":
-      return <FreeText q={q} value={value as string | undefined} onChange={onChange} long />;
+      return <FreeText q={q} value={value as string | undefined} onChange={onChange} />;
     case "single_select":
       return <SingleSelect q={q} value={value as string | undefined} onChange={onChange} />;
     case "multi_select":
@@ -60,21 +59,18 @@ function FreeText({
   q,
   value,
   onChange,
-  long,
 }: {
   q: Question;
   value: string | undefined;
   onChange: (v: AnswerValue) => void;
-  long?: boolean;
 }) {
-  const Tag = long ? "textarea" : "input";
   return (
-    <Tag
+    <textarea
       aria-label={`Q${q.number}`}
-      className={`field ${long ? "min-h-[6rem]" : ""}`}
+      rows={3}
+      className="field min-h-[5rem]"
       value={value ?? ""}
       onChange={(e) => onChange(e.target.value)}
-      {...(long ? { rows: 4 } : { type: "text" })}
     />
   );
 }
