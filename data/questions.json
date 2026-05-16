@@ -1,0 +1,689 @@
+[
+  {
+    "id": "q1",
+    "number": 1,
+    "type": "color_test",
+    "required": true,
+    "externalUrl": "https://psytests.org/luscher/8color.html",
+    "promptKey": "q1.prompt"
+  },
+  {
+    "id": "q2",
+    "number": 2,
+    "type": "free_text",
+    "required": true,
+    "promptKey": "q2.prompt"
+  },
+  {
+    "id": "q3",
+    "number": 3,
+    "type": "free_text",
+    "required": true,
+    "promptKey": "q3.prompt"
+  },
+  {
+    "id": "q4",
+    "number": 4,
+    "type": "free_text",
+    "required": false,
+    "promptKey": "q4.prompt"
+  },
+  {
+    "id": "q5",
+    "number": 5,
+    "type": "free_text_long",
+    "required": true,
+    "promptKey": "q5.prompt"
+  },
+  {
+    "id": "q6",
+    "number": 6,
+    "type": "free_text",
+    "required": true,
+    "promptKey": "q6.prompt"
+  },
+  {
+    "id": "q7",
+    "number": 7,
+    "type": "free_text_long",
+    "required": false,
+    "promptKey": "q7.prompt"
+  },
+  {
+    "id": "q8",
+    "number": 8,
+    "type": "free_text",
+    "required": false,
+    "promptKey": "q8.prompt"
+  },
+  {
+    "id": "q9",
+    "number": 9,
+    "type": "free_text",
+    "required": false,
+    "promptKey": "q9.prompt"
+  },
+  {
+    "id": "q10",
+    "number": 10,
+    "type": "free_text_long",
+    "required": false,
+    "promptKey": "q10.prompt"
+  },
+  {
+    "id": "q11",
+    "number": 11,
+    "type": "free_text",
+    "required": false,
+    "promptKey": "q11.prompt"
+  },
+  {
+    "id": "q12",
+    "number": 12,
+    "type": "free_text",
+    "required": true,
+    "promptKey": "q12.prompt"
+  },
+  {
+    "id": "q13",
+    "number": 13,
+    "type": "free_text",
+    "required": false,
+    "promptKey": "q13.prompt"
+  },
+  {
+    "id": "q14",
+    "number": 14,
+    "type": "free_text",
+    "required": false,
+    "promptKey": "q14.prompt"
+  },
+  {
+    "id": "q15",
+    "number": 15,
+    "type": "industry_block",
+    "required": true,
+    "subjects": [
+      "self",
+      "mother",
+      "father"
+    ],
+    "industries": [
+      "i1",
+      "i2",
+      "i3",
+      "i4",
+      "i5",
+      "i6",
+      "i7",
+      "i8",
+      "i9",
+      "i10",
+      "i11",
+      "i12",
+      "i13",
+      "i14",
+      "i15",
+      "i16",
+      "i17",
+      "i18",
+      "i19",
+      "i20"
+    ],
+    "promptKey": "q15.prompt"
+  },
+  {
+    "id": "q16",
+    "number": 16,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "numbers",
+      "letters"
+    ],
+    "promptKey": "q16.prompt"
+  },
+  {
+    "id": "q17",
+    "number": 17,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 8
+    },
+    "options": [
+      "people",
+      "documents",
+      "food",
+      "machines",
+      "computers",
+      "metal",
+      "plastic",
+      "wood_leather"
+    ],
+    "promptKey": "q17.prompt"
+  },
+  {
+    "id": "q18",
+    "number": 18,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 4
+    },
+    "options": [
+      "water",
+      "air",
+      "earth",
+      "fire"
+    ],
+    "promptKey": "q18.prompt"
+  },
+  {
+    "id": "q19",
+    "number": 19,
+    "type": "iq_matrix",
+    "required": false,
+    "items": [
+      "words",
+      "numbers",
+      "graphics"
+    ],
+    "options": [
+      "harder",
+      "easier"
+    ],
+    "promptKey": "q19.prompt"
+  },
+  {
+    "id": "q20",
+    "number": 20,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "set_by_management",
+      "your_own",
+      "set_by_you_for_others"
+    ],
+    "promptKey": "q20.prompt"
+  },
+  {
+    "id": "q21",
+    "number": 21,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "fixed_salary",
+      "percent_of_projects"
+    ],
+    "promptKey": "q21.prompt"
+  },
+  {
+    "id": "q22",
+    "number": 22,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "in_team",
+      "separately_common_cause",
+      "freelance",
+      "managing_others"
+    ],
+    "promptKey": "q22.prompt"
+  },
+  {
+    "id": "q23",
+    "number": 23,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "as_needed",
+      "morning",
+      "afternoon",
+      "classic_9_to_6"
+    ],
+    "promptKey": "q23.prompt"
+  },
+  {
+    "id": "q24",
+    "number": 24,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "near_home",
+      "city_center",
+      "mobile_in_city",
+      "business_trips"
+    ],
+    "promptKey": "q24.prompt"
+  },
+  {
+    "id": "q25",
+    "number": 25,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 7
+    },
+    "options": [
+      "sales",
+      "marketing",
+      "finance_law",
+      "service",
+      "logistics",
+      "production",
+      "management"
+    ],
+    "promptKey": "q25.prompt"
+  },
+  {
+    "id": "q26",
+    "number": 26,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "warn_ahead",
+      "late_with_excuses",
+      "always_on_time"
+    ],
+    "promptKey": "q26.prompt"
+  },
+  {
+    "id": "q27",
+    "number": 27,
+    "type": "multi_select",
+    "required": true,
+    "options": [
+      "envy_them",
+      "admire_them",
+      "quietly_upset",
+      "loudly_indignant",
+      "angry_at_boss",
+      "i_do_something_wrong"
+    ],
+    "promptKey": "q27.prompt"
+  },
+  {
+    "id": "q28",
+    "number": 28,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "by_results",
+      "by_time_spent",
+      "by_difficulty"
+    ],
+    "promptKey": "q28.prompt"
+  },
+  {
+    "id": "q29",
+    "number": 29,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 7
+    },
+    "options": [
+      "spend_on_earning",
+      "always_learning",
+      "family_and_friends",
+      "free_time_for_self",
+      "time_priceless",
+      "i_get_bored_like_action",
+      "time_flies_fast"
+    ],
+    "promptKey": "q29.prompt"
+  },
+  {
+    "id": "q30",
+    "number": 30,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "talk_to_boss_privately",
+      "open_discussion_with_team",
+      "just_do_what_needed"
+    ],
+    "promptKey": "q30.prompt"
+  },
+  {
+    "id": "q31",
+    "number": 31,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 5
+    },
+    "options": [
+      "for_money",
+      "help_people",
+      "develop_world",
+      "strengthen_country",
+      "raise_status"
+    ],
+    "promptKey": "q31.prompt"
+  },
+  {
+    "id": "q32",
+    "number": 32,
+    "type": "multi_select",
+    "required": true,
+    "options": [
+      "for_family",
+      "for_personal_wants",
+      "for_big_purchase",
+      "pay_loans"
+    ],
+    "promptKey": "q32.prompt"
+  },
+  {
+    "id": "q33",
+    "number": 33,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "near_parents",
+      "own_family_far_from_parents",
+      "travel_change_home_is_family"
+    ],
+    "promptKey": "q33.prompt"
+  },
+  {
+    "id": "q34",
+    "number": 34,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "suburban_house",
+      "city_apartment"
+    ],
+    "promptKey": "q34.prompt"
+  },
+  {
+    "id": "q35",
+    "number": 35,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "rent",
+      "own"
+    ],
+    "promptKey": "q35.prompt"
+  },
+  {
+    "id": "q36",
+    "number": 36,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "build_career_in_one_org",
+      "try_industries_become_pro",
+      "learn_and_clone_business",
+      "my_own_idea_path_niche"
+    ],
+    "promptKey": "q36.prompt"
+  },
+  {
+    "id": "q37",
+    "number": 37,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 3
+    },
+    "options": [
+      "income_source",
+      "inevitability",
+      "paid_hobby"
+    ],
+    "promptKey": "q37.prompt"
+  },
+  {
+    "id": "q38",
+    "number": 38,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "discuss_with_boss_and_colleagues",
+      "discuss_with_family_friends_online",
+      "not_important_just_work"
+    ],
+    "promptKey": "q38.prompt"
+  },
+  {
+    "id": "q39",
+    "number": 39,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 5
+    },
+    "options": [
+      "money",
+      "not_dusty",
+      "field_industry",
+      "what_to_do_specifically",
+      "growth_prospects"
+    ],
+    "promptKey": "q39.prompt"
+  },
+  {
+    "id": "q40",
+    "number": 40,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "stylish_trendy",
+      "comfortable",
+      "suits_me",
+      "uniform",
+      "like_friends_colleagues"
+    ],
+    "promptKey": "q40.prompt"
+  },
+  {
+    "id": "q41",
+    "number": 41,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "if_we_became_friends",
+      "part_of_corporate_culture",
+      "no_enough_at_work"
+    ],
+    "promptKey": "q41.prompt"
+  },
+  {
+    "id": "q42",
+    "number": 42,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 4
+    },
+    "options": [
+      "with_family",
+      "with_friends",
+      "study_hobby_own_business",
+      "sport_fresh_air"
+    ],
+    "promptKey": "q42.prompt"
+  },
+  {
+    "id": "q43",
+    "number": 43,
+    "type": "multi_select",
+    "required": true,
+    "options": [
+      "dont_like_studying_like_knowing",
+      "i_like_studying",
+      "study_what_helps_earn",
+      "grades_motivate",
+      "grades_dont_matter",
+      "live_and_learn_forever"
+    ],
+    "promptKey": "q43.prompt"
+  },
+  {
+    "id": "q44",
+    "number": 44,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "afraid_of_it",
+      "very_responsible",
+      "should_match_pay"
+    ],
+    "promptKey": "q44.prompt"
+  },
+  {
+    "id": "q45",
+    "number": 45,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "father_and_teacher",
+      "want_to_be_boss",
+      "structural_unit"
+    ],
+    "promptKey": "q45.prompt"
+  },
+  {
+    "id": "q46",
+    "number": 46,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 7
+    },
+    "options": [
+      "health",
+      "prosperity",
+      "wisdom",
+      "power_strength",
+      "happy_family",
+      "thriving_country",
+      "peace_love_on_earth"
+    ],
+    "promptKey": "q46.prompt"
+  },
+  {
+    "id": "q47",
+    "number": 47,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 3
+    },
+    "options": [
+      "write",
+      "call",
+      "meet_in_person"
+    ],
+    "promptKey": "q47.prompt"
+  },
+  {
+    "id": "q48",
+    "number": 48,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 6
+    },
+    "options": [
+      "with_1_3_close_people",
+      "in_solitude",
+      "in_large_group",
+      "in_small_group",
+      "center_of_attention",
+      "be_leader"
+    ],
+    "promptKey": "q48.prompt"
+  },
+  {
+    "id": "q49",
+    "number": 49,
+    "type": "single_select",
+    "required": true,
+    "options": [
+      "best_friends",
+      "geek_cyborg",
+      "as_needed",
+      "dislike"
+    ],
+    "promptKey": "q49.prompt"
+  },
+  {
+    "id": "q50",
+    "number": 50,
+    "type": "free_text_long",
+    "required": true,
+    "promptKey": "q50.prompt"
+  },
+  {
+    "id": "q51",
+    "number": 51,
+    "type": "likert_group",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 10
+    },
+    "items": [
+      "parents_relationship",
+      "personal_life",
+      "overall_life_satisfaction"
+    ],
+    "promptKey": "q51.prompt"
+  },
+  {
+    "id": "q52",
+    "number": 52,
+    "type": "ranking",
+    "required": true,
+    "scale": {
+      "min": 1,
+      "max": 3
+    },
+    "options": [
+      "start_from_zero_others_continue",
+      "take_existing_and_polish",
+      "do_everything_start_to_finish"
+    ],
+    "promptKey": "q52.prompt"
+  },
+  {
+    "id": "q53",
+    "number": 53,
+    "type": "multi_select",
+    "required": true,
+    "options": [
+      "creative_person",
+      "reliable_performer",
+      "doer_achiever",
+      "techie",
+      "humanitarian",
+      "master_craftsman"
+    ],
+    "promptKey": "q53.prompt"
+  },
+  {
+    "id": "q54",
+    "number": 54,
+    "type": "color_test",
+    "required": true,
+    "externalUrl": "https://psytests.org/luscher/8color.html",
+    "promptKey": "q54.prompt"
+  }
+]
